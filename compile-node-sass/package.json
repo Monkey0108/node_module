@@ -1,0 +1,33 @@
+{
+	"name": "sass",
+	"id": "compile-node-sass",
+	"version": "0.0.1-2019022020",
+	"external": {
+		"type": "node",
+		"programPath": "${pluginPath}",
+		"executable": "/node_modules/.bin/node-sass",
+		"programName": "node-sass-china",
+		"commands": [
+			{
+				"id": "SASS_COMPILE",
+				"name": "编译scss/sass",
+				"command": [
+					"${programPath}",
+					"${file}",
+					"${fileBasename}.css"
+				],
+				"extensions": "scss,sass",
+				"key": "",
+				"showInParentMenu": false,
+				"onDidSaveExecution": false
+			}
+		]
+	},
+	"dependencies": {
+		"node-sass-china": "^4.7.2"
+	},
+	"extensionDependencies": [
+		"npm"
+	],
+	"description": "compile-node-sass插件用于scss/sass文件编译"
+}
